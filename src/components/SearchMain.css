@@ -1,0 +1,140 @@
+.search-main {
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    margin: 0;
+}
+.search-main .bg-search {
+    /* margin-top: 20px;
+    text-align: center; */
+    background-color: rgb(16, 26, 41);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 78%;
+    z-index: -1;
+    width: 100%;
+    box-shadow: 4px 4px 10px rgba(213, 223, 235, 0.5), 0px 5px 5px rgba(162, 201, 226, 0.42);
+}
+.search-main h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+.form-search-main {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 45%;
+}
+
+.form-search-main i {
+    position: absolute;
+    right: 0;
+    font-size: 1.4rem;
+    top: 50%;
+    color: gray;
+    transform: translate(-100%, -65%);
+}
+
+.form-search-main input {
+    margin: 10px auto 20px;
+    padding: 10px 20px 10px 30px;
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1.25rem;
+    border-radius: 60px;
+    box-shadow: 4px 7px 18px rgba(213, 223, 235, 0.5);
+    background-color: whitesmoke;
+    /* margin-left: 10px; */
+}
+.selections {
+    text-align: center;
+}
+
+.selections h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.4rem;
+    padding: 10px 0 0;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.selections h1 .logo {
+    font-size: 2.4rem;
+    padding: 0 10px;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 900;
+    color: rgb(255, 0, 0);
+}
+.selections h1 .logo span {
+    font-weight: 800;
+    color: rgb(255, 239, 239);
+}
+
+@media (max-width: 1250px) {
+    .form-search-main {
+        width: 65%;
+    }
+}
+
+@media (max-width: 950px) {
+    .form-search-main i {
+        position: absolute;
+        font-size: 1.4rem;
+        top: 50%;
+        transform: translate(-100%, -65%);
+    }
+
+    .form-search-main input {
+        margin: 10px auto 20px;
+        padding: 10px 20px 10px 30px;
+        width: 100%;
+        height: 3rem;
+        font-size: 1.1rem;
+    }
+    .selections h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2rem;
+        color: whitesmoke;
+    }
+    .selections h1 .logo {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .form-search-main {
+        width: 75%;
+    }
+}
+
+@media (max-width: 715px) {
+    .form-search-main {
+        width: 80%;
+    }
+    .form-search-main i {
+        position: absolute;
+        font-size: 1.2rem;
+        top: 47%;
+        transform: translate(-100%, -65%);
+    }
+
+    .form-search-main input {
+        margin: 10px auto 20px;
+        padding: 10px 20px 10px 30px;
+        width: 100%;
+        height: 2.6rem;
+        font-size: 1.05rem;
+    }
+    .selections h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        color: whitesmoke;
+    }
+    .selections h1 .logo {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+}

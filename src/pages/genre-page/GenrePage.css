@@ -1,0 +1,182 @@
+.genre-page {
+    width: 70%;
+    margin: auto;
+    padding: 90px 0;
+}
+
+.genre-page .genre-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    position: relative;
+}
+
+.movie-info h5 {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 0.87rem;
+}
+.genre-page .genre-section .movie .movie-info {
+    /* height: 80px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-bottom: 10px;
+}
+.movie-info h5 {
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+.genre-page .genre-section .movie .movie-info .movie-info-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 5px;
+    /* height: 150px; */
+    /* background-color: yellow; */
+}
+.movie-info-sec p,
+span {
+    font-size: 0.85rem;
+    padding: 0%;
+    margin: 0%;
+    font-size: 0.94rem;
+}
+.genre-page .genre-section .movie {
+    /* position: relative; */
+}
+.genre-page-info.searchId h1 {
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+}
+.genre-page-info.searchId h1 span {
+    font-style: italic;
+    font-size: 2rem;
+    color: red;
+    margin-left: 4px;
+}
+
+.genre-page .genre-section .movie .movie-info .movie-info-sec span {
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 0.85rem;
+    width: 30px;
+    font-weight: 700;
+    /* display: flex; */
+    text-align: center;
+    /* background-color: rgb(89, 89, 89); */
+}
+.genre-page .genre-section .movie img {
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(84, 73, 73, 0.767);
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+
+.genre-page .genre-section .movie img:hover {
+    box-shadow: 4px 4px 8px rgb(182, 2, 2), 4px 4px 8px rgb(182, 2, 2), 4px 4px 8px rgb(182, 2, 2);
+    /* transform: scale(1.05); */
+    /* width: 250px; */
+}
+
+.genre-page .pagination {
+    background-color: rgba(116, 41, 41, 0.173);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 20px auto 50px;
+    box-shadow: 4px 4px 8px rgba(84, 73, 73, 0.767);
+}
+
+.pagination button {
+    padding: 1.2rem 1.4rem;
+    width: 2.2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: whitesmoke;
+    cursor: pointer;
+}
+.pagination button:first-child {
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+}
+.pagination button:last-child {
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+button.active-page {
+    background-color: rgb(238, 89, 89);
+    color: white;
+}
+
+@media (max-width: 1500px) {
+    .genre-page {
+        width: 90%;
+        margin: auto;
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 810px) {
+    .genre-page-info.searchId h1 {
+        font-size: 1.4rem;
+        color: rgb(255, 255, 255);
+    }
+    .genre-page-info.searchId h1 span {
+        font-style: italic;
+        font-size: 1.5rem;
+        color: red;
+        margin-left: 4px;
+    }
+    .genre-page {
+        width: 90%;
+        margin: auto;
+        padding: 30px 0;
+    }
+    .genre-page h1 {
+        font-size: 2rem;
+    }
+    .movie-info h5 {
+        padding: 0;
+        margin: 0;
+        margin-top: 8px;
+        font-weight: 600;
+        font-size: 0.8rem;
+        display: none;
+    }
+    .movie-info-sec p {
+        font-size: 0.8rem;
+        padding: 0%;
+        margin: 0%;
+        font-size: 0.8rem;
+        display: none;
+    }
+    .movie-info-sec span {
+        font-size: 0.8rem;
+        padding: 0%;
+        margin: 0%;
+        font-size: 0.8rem;
+        display: none;
+    }
+    .genre-page .genre-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 14px;
+        position: relative;
+    }
+}
